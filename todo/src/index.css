@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+}
+
+.search{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: end;
+    align-content: center;
+}
+.searchSpace{
+    height: 30px;
+    width: 500px;
+    outline: none;
+    border-radius:5px;
+    border: 1px solid skyblue;
+}
+.Dropdown{
+    background-color: #1f4bc5;
+    color: white;
+    outline: none;
+    height: 30px;
+    border-radius:5px;
+}
+
+.notes{
+    font-weight: bold;
+    margin-left: 400px;
+    margin-top: 40px;
+    text-align: left;
+    width: 350px;
+}
+.note1{
+    border-bottom: 1px solid blue;
+}
+.note2{
+    margin-top: 10px;
+    border-bottom: 1px solid blue;
+}
+.note3{
+    margin-top: 10px;
+    border-bottom: 1px solid blue;
+}
+.checknote{
+    margin-right: 10px;
+    outline: none;
+    cursor: pointer;
+}
+    
