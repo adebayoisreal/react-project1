@@ -3,7 +3,7 @@ const Search = () => {
         <div className="search">
             <input type="text" name="" id="" placeholder="Search note..."  className=" searchSpace"  />
             <select name="" id="" className="Dropdown">
-                <option value="">MYNAME</option>
+                <option value="">   ALL</option>
                 <option value="">
                     my number
                 </option>
