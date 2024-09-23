@@ -20,21 +20,20 @@ const TaskModal = ({isOpen, onClose, onAddTask}) => {
         <div className="modal">
 
             <div className="modal-content">
-                <h2>
-                    Add new Task
-                </h2>
-                <form onSubmit={handleSubmit}>
+
+                <form onSubmit={handleSubmit} className="task-form">
             <label>
                 Task Name:
-                <input type="text" value={taskName} onChange={(e)=> setTaskName(e.target.value)} />
+                <input type="text" value={taskName} onChange={(e)=> setTaskName(e.target.value)} className="input-task-name" />
             </label>
             <label >
                 Description:
-                <textarea value={taskDescription} onChange={(e)=> setTaskDescription(e.target.value)} className="description"/>
+                <textarea value={taskDescription} onChange={(e)=> setTaskDescription(e.target.value)} className="input-task-desc"/>
             </label>
-            <button type="submit" className="mod button">Add Task</button>
-            <button type="button" onClick={onClose} className="mod button">Cancel</button>
-                    
+            <div className="modal-buttons"> 
+            <button type="submit" className="add-task-btn">Add Task</button>
+            <button type="button" onClick={onClose} className="cancel-btn">Cancel</button>
+            </div>   
                 </form>
             </div>
         </div>
